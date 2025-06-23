@@ -24,11 +24,11 @@ const HomePage   = () => {
             
             <div className='flex flex-col items-center justify-center gap-5'>
                 <Image
-                    src="/assets/chatgpt.png"
+                    src="/assets/chatgpt .png"
                     alt="Harikaran" 
                     width={200}
                     height={200}
-                    className=' mt-18  p-2 w-[280px] h-auto rounded-t-full shadow-2xl hover:shadow-md transition-shadow duration-300 transform hover:scale-105'
+                    className=' mt-18 w-[280px] h-auto border-1 border-black  rounded-t-full shadow-2xl hover:shadow-md transition-shadow duration-300 transform hover:scale-105'
                />
                     <h1 className='text-3xl md:text-5xl font-bold'>Hi, I&#39;m Harikaran</h1>
                     <p className='hover:bg-pink-300 duration-1000 text-center md:text-2xl font-semibold text-pink-600'>&lt; Software Engineering Student &amp; Full-stack JS Developer /&gt;</p>
