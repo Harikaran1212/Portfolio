@@ -28,7 +28,7 @@ const HomePage   = () => {
                     alt="Harikaran" 
                     width={200}
                     height={200}
-                    className='  w-[280px] h-auto border-1 border-black  rounded-t-full shadow-2xl hover:shadow-md transition-shadow duration-300 transform hover:scale-105'
+                    className=' mt-18 w-[280px] h-auto border- border-black  rounded-t-full shadow-2xl hover:shadow-md transition-shadow duration-300 transform hover:scale-105'
                />
                     <h1 className='text-3xl md:text-5xl font-bold'>Hi, I&#39;m Harikaran</h1>
                     <p className='hover:bg-pink-300 duration-1000 text-center md:text-2xl font-semibold text-pink-600'>&lt; Software Engineering Student &amp; Full-stack JS Developer /&gt;</p>
