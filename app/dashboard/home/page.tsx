@@ -24,7 +24,7 @@ const HomePage   = () => {
             
             <div className='flex flex-col items-center justify-center gap-5'>
                 <Image
-                    src="/assets/harikaran.png"
+                    src="/assets/chatgpt.png"
                     alt="Harikaran" 
                     width={200}
                     height={200}
