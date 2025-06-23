@@ -18,7 +18,7 @@ import Footer from "./footer/page";
 
 export default function Dashboard() {
     return (
-     <div className="flex flex-col gap-5 ">
+     <div className="  ">
        <Navbar /> 
      <HomePage />
       <About /> 

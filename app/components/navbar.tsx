@@ -13,7 +13,7 @@ const Navbar = () => {
     setActiveLink(link);
   };
   return (
-    <div className="p-6 fixed top-0 left-0 right-0 z-50 bg-white  ">
+    <div className="p-6 fixed w-full z-50 bg-white   ">
       <nav className="flex flex-row  items-center justify-between gap-4 xl:px-69 px-2  ">
         <h1 className="text-lg hover:text-pink-500 font-medium" onClick={() => handleClick('home')}>
           <Link href="/#home">Harikaran</Link>
@@ -77,7 +77,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
 
 
 
