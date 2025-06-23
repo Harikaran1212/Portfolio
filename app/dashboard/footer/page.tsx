@@ -7,9 +7,9 @@ import { Icon } from '@iconify/react';
 const Footer = () => {
     const time = new Date().getFullYear();
     return(
-        <div id='footer' className='flex  md:mb-0 items-center justify-center h-auto md:h-56 w-full text-white bg-black  gap-10 p-10 mt-30 md:mt-0'>
-            <div className='flex flex-col  items-center justify-center gap-6 w-full max-w-6xl'>
-            <div className='flex flex-col md:flex-row items-center justify-between gap-6 w-full max-w-6xl'>
+        <div id='footer' className='flex   items-center justify-center h-auto md:h-56  text-white bg-black  gap-10 p-10 mt-30 md:mt-0'>
+            <div className='flex flex-col  items-center justify-center gap-6 gap-6 w-full max-w-6xl      '>
+            <div className='flex flex-col md:flex-row items-center justify-between gap-6 w-full '>
                 <div className='flex flex-col  justify-center gap-6'>
                     <h1 className='text-2xl font-bold text-pink-600'>Harikaran</h1>
                     <h2>Full Stack Developer</h2>
@@ -23,7 +23,7 @@ const Footer = () => {
             </div>
                 </div>
                 <div className='flex flex-col items-center justify-center gap-4'>
-                    <ul className='flex flex-row flex-wrap gap-10 items-center  md:text-lg   md:w-[500px] justify-center md:justify-start'>
+                    <ul className='flex flex-row flex-wrap gap-5 md:gap-10  items-center  md:text-lg   md:w-[500px] justify-start'>
                         <li>
                             <Link href="/#home" className=' font-medium hover:text-pink-600 hover:-translate-y-3/12 transition-all duration-300'>Home</Link>
                         </li>
@@ -48,8 +48,8 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className='flex flex-col items-center justify-center gap-2'>
-               <p className=''>© {time}-Designed and Developed by Harikaran ❤️</p>
+            <div className='flex flex-col items-center justify-center '>
+               <p className='text-[12px] md:text-base'>© {time}-Designed and Developed by Harikaran ❤️</p>
             </div>
             </div>
 
