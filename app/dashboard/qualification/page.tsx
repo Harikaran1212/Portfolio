@@ -17,7 +17,7 @@ const Qualification = () => {
     AOS.init({ duration: 800 });
   }, []);
     return(
-        <div id="qualification" className=" mt-44  md:mt-0 flex flex-col items-center justify-center h-screen w-full bg-white p-10 " data-aos="zoom-in" >
+        <div id="qualification" className=" md:mt-0     mt-72 flex flex-col items-center justify-center h-screen w-full bg-white p-10 " data-aos="zoom-in" >
             <div className=' flex flex-col items-center justify-center   '>
         <div className='flex flex-col items-center justify-center gap-2 '>
       <h1 className='text-2xl font-bold '>&lt; Qualification /&gt;</h1>
