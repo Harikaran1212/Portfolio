@@ -15,6 +15,7 @@ const Qualification = () => {
   useEffect(() => {
     AOS.init({ duration: 800 });
   }, []);
+<<<<<<< HEAD
   return (
     <div
       id="qualification"
@@ -28,6 +29,15 @@ const Qualification = () => {
           </h1>
           <h3 className=" text-gray-600">My Personal Journey</h3>
         </div>
+=======
+    return(
+        <div id="qualification" className=" md:mt-0     mt-72 flex flex-col items-center justify-center h-screen w-full bg-white p-10 " data-aos="zoom-in" >
+            <div className=' flex flex-col items-center justify-center   '>
+        <div className='flex flex-col items-center justify-center gap-2 '>
+      <h1 className='text-2xl font-bold '>&lt; Qualification /&gt;</h1>
+      <h3 className=' text-gray-600'>My Personal Journey</h3>
+      </div>
+>>>>>>> 611e201a308ca5d54683f595f791ef292109334d
 
         <div className="flex flex-row items-center justify-center gap-6 mt-5  ">
           <button

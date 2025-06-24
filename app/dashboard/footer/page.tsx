@@ -5,6 +5,7 @@ import React from "react";
 import { Icon } from "@iconify/react";
 
 const Footer = () => {
+<<<<<<< HEAD
   const time = new Date().getFullYear();
   return (
     <div
@@ -16,6 +17,16 @@ const Footer = () => {
           <div className="flex flex-col  justify-center gap-6">
             <h1 className="text-2xl font-bold text-pink-600">Harikaran</h1>
             <h2>Full Stack Developer</h2>
+=======
+    const time = new Date().getFullYear();
+    return(
+        <div id='footer' className='flex   items-center justify-center h-auto md:h-56  text-white bg-black  gap-10 p-10 mt-30 md:mt-0'>
+            <div className='flex flex-col  items-center justify-center gap-6 gap-6 w-full max-w-6xl      '>
+            <div className='flex flex-col md:flex-row items-center justify-between gap-6 w-full '>
+                <div className='flex flex-col  justify-center gap-6'>
+                    <h1 className='text-2xl font-bold text-pink-600'>Harikaran</h1>
+                    <h2>Full Stack Developer</h2>
+>>>>>>> 611e201a308ca5d54683f595f791ef292109334d
 
             <div className="flex flex-row  gap-10 ">
               <Link
@@ -58,6 +69,7 @@ const Footer = () => {
                 />
               </Link>
             </div>
+<<<<<<< HEAD
           </div>
           <div className="flex flex-col items-center justify-center gap-4">
             <ul className="flex flex-row flex-wrap gap-5 md:gap-10  items-center  md:text-lg   md:w-[500px] justify-start">
@@ -119,6 +131,40 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+=======
+                </div>
+                <div className='flex flex-col items-center justify-center gap-4'>
+                    <ul className='flex flex-row flex-wrap gap-5 md:gap-10  items-center  md:text-lg   md:w-[500px] justify-start'>
+                        <li>
+                            <Link href="/#home" className=' font-medium hover:text-pink-600 hover:-translate-y-3/12 transition-all duration-300'>Home</Link>
+                        </li>
+                         <li>
+                            <Link href="/#about" className=' font-medium hover:text-pink-600 hover:-translate-y-3/12 transition-all duration-300'>About</Link>
+                        </li>
+                         <li>
+                            <Link href="/#services" className=' font-medium hover:text-pink-600 hover:-translate-y-3/12 transition-all duration-300'>Services</Link>
+                        </li>
+                         <li>
+                            <Link href="/#skills" className='font-medium hover:text-pink-600 hover:-translate-y-3/12 transition-all duration-300'>Skills</Link>
+                        </li>
+                         <li>
+                            <Link href="/#qualification" className='font-medium hover:text-pink-600 hover:-translate-y-3/12 transition-all duration-300'>Qualification</Link>
+                        </li>
+                         <li>
+                            <Link href="/#projects" className='font-medium hover:text-pink-600 hover:-translate-y-3/12 transition-all duration-300'>Projects</Link>
+                        </li>
+                         <li>
+                            <Link href="/#contact" className='font-medium hover:text-pink-600 hover:-translate-y-3/12 transition-all duration-300'>Contact</Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div className='flex flex-col items-center justify-center '>
+               <p className='text-[12px] md:text-base'>© {time}-Designed and Developed by Harikaran ❤️</p>
+            </div>
+            </div>
+
+>>>>>>> 611e201a308ca5d54683f595f791ef292109334d
         </div>
         <div className="flex flex-col items-center justify-center ">
           <p className="text-[12px] md:text-base">
