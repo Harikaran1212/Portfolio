@@ -10,31 +10,18 @@ import Services from "./services/page";
 import Skills from "./skills/page";
 import Footer from "./footer/page";
 
-
-
-
-
-
-
 export default function Dashboard() {
-    return (
-     <div className="  ">
-       <Navbar /> 
-     <HomePage />
-      <About /> 
-      <Services /> 
-      <Skills /> 
-      <Qualification /> 
-       <Projects />
+  return (
+    <div className="  ">
+      <Navbar />
+      <HomePage />
+      <About />
+      <Services />
+      <Skills />
+      <Qualification />
+      <Projects />
       <Contact />
       <Footer />
-       
-
-      
-      
-     
-
-      
-     </div>
-    );
-  }
+    </div>
+  );
+}
