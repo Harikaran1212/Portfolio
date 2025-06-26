@@ -18,7 +18,7 @@ const projectData: Project[] = [
     description:
       "Land Your Dream Job with AI-Enhanced Resumes. Upload your resume, paste a job description, and let our AI match and optimize your resume for better results.",
     image: "/assets/image3.png",
-    link: "https://smg-mu.vercel.app/",
+    link: "https://job-matcher-eight.vercel.app/",
   },
   {
     title: "Yoom",
