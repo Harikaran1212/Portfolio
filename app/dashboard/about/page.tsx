@@ -61,7 +61,7 @@ const About = () => {
             </div>
 
             <a
-              href="/assets/harikaran_resume.pdf"
+              href="/assets/Harikaran R NEW.pdf"
               download
               className="mt-2 h-12 bg-pink-600 text-white font-bold px-4 py-2 rounded-md hover:bg-pink-700 transition duration-300 flex gap-2 items-center"
             >
