@@ -22,9 +22,9 @@ const About = () => {
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 w-full">
           <Image
-            src="/assets/rklee.png"
+            src="/assets/mine.jpg"
             alt="Harikaran"
-            width={180}
+            width={280}
             height={180}
             className="border-4 border-purple-100 shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 rounded-lg"
           />

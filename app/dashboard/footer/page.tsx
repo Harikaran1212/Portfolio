@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center gap-4">
-            <ul className="flex flex-row flex-wrap gap-5 md:gap-10  items-center  md:text-lg   md:w-[500px] justify-start">
+            <ul className="flex flex-row flex-wrap gap-5 md:gap-10  items-center  md:text-lg  md:w-[500px] md:justify-start justify-center text-center text-sm ">
               <li>
                 <Link
                   href="/#home"
