@@ -18,15 +18,15 @@ const Qualification = () => {
   return (
     <div
       id="qualification"
-      className=" md:mt-0     mt-72 flex flex-col items-center justify-center h-screen w-full bg-white p-10 "
-      data-aos="zoom-in"
+      className=" md:mt-0     mt-72 flex flex-col items-center justify-center h-screen w-full bg-white dark:bg-[#0A0A0F] p-10 transition-colors duration-300"
+     
     >
-      <div className=" flex flex-col items-center justify-center   ">
+      <div className=" flex flex-col items-center justify-center ">
         <div className="flex flex-col items-center justify-center gap-2 ">
-          <h1 className="text-2xl md:text-3xl font-bold ">
+          <h1 className="text-2xl md:text-3xl font-bold dark:text-white">
             &lt; Qualification /&gt;
           </h1>
-          <h3 className=" text-gray-600">My Personal Journey</h3>
+          <h3 className=" text-gray-600 dark:text-gray-400">My Personal Journey</h3>
         </div>
 
         <div className="flex flex-row items-center justify-center gap-6 mt-5  ">
@@ -58,21 +58,21 @@ const Qualification = () => {
           <div className="flex flex-row items-center justify-center gap-15  ">
             <div className="flex flex-col items-center justify-center gap-10">
               <div className="mt-10">
-                <h1 className="text-xl font-bold ">
+                <h1 className="text-xl font-bold dark:text-white">
                   Bachelor&#39;s in Computer Science
                 </h1>
-                <h2>Global Institute Of Engineering And Technology (GIET)</h2>
-                <p className="text-gray-500">CGPA: 8.4</p>
-                <p className="flex flex-row gap-2 items-center mt-3 text-gray-500">
+                <h2 className="dark:text-gray-300">Global Institute Of Engineering And Technology (GIET)</h2>
+                <p className="text-gray-500 dark:text-gray-400">CGPA: 8.4</p>
+                <p className="flex flex-row gap-2 items-center mt-3 text-gray-500 dark:text-gray-400">
                   <Icon icon="solar:calendar-linear" width="18" height="20" />{" "}
                   2021 - 2025
                 </p>
               </div>
               <div className="mt-20">
-                <h1 className="text-xl font-bold ">SSLC</h1>
-                <h2>The Namakkal Teachers Vidhyaashram Matric School</h2>
-                <p className="text-gray-500">Percentage: 80%</p>
-                <p className="flex flex-row gap-2 items-center mt-3 text-gray-500">
+                <h1 className="text-xl font-bold dark:text-white">SSLC</h1>
+                <h2 className="dark:text-gray-300">The Namakkal Teachers Vidhyaashram Matric School</h2>
+                <p className="text-gray-500 dark:text-gray-400">Percentage: 80%</p>
+                <p className="flex flex-row gap-2 items-center mt-3 text-gray-500 dark:text-gray-400">
                   <Icon icon="solar:calendar-linear" width="18" height="20" />
                   2018-2019
                 </p>
@@ -86,10 +86,10 @@ const Qualification = () => {
               <div className="h-4 w-4 rounded-full bg-pink-600"></div>
             </div>
             <div className="mt-30">
-              <h1 className="text-xl font-bold">HSC</h1>
-              <h2>The Namakkal Teachers Vidhyaashram Matric School</h2>
-              <p className="text-gray-500">Percentage: 82%</p>
-              <p className="flex flex-row gap-2 items-center mt-3 text-gray-500">
+              <h1 className="text-xl font-bold dark:text-white">HSC</h1>
+              <h2 className="dark:text-gray-300">The Namakkal Teachers Vidhyaashram Matric School</h2>
+              <p className="text-gray-500 dark:text-gray-400">Percentage: 82%</p>
+              <p className="flex flex-row gap-2 items-center mt-3 text-gray-500 dark:text-gray-400">
                 <Icon icon="solar:calendar-linear" width="18" height="20" />{" "}
                 2020 - 2021
               </p>
@@ -99,19 +99,19 @@ const Qualification = () => {
           <div className="flex flex-row items-center justify-center  gap-15 ">
             <div className="flex flex-col items-center justify-center gap-10">
               <div className="mt-10">
-                <h1 className="text-xl font-bold ">Software Intern</h1>
-                <h2>Mobzway Technologies</h2>
-                <p className="text-gray-500">Remote - Rajasthan</p>
-                <p className="flex flex-row gap-2 items-center mt-3 text-gray-500">
+                <h1 className="text-xl font-bold dark:text-white">Software Intern</h1>
+                <h2 className="dark:text-gray-300">Mobzway Technologies</h2>
+                <p className="text-gray-500 dark:text-gray-400">Remote - Rajasthan</p>
+                <p className="flex flex-row gap-2 items-center mt-3 text-gray-500 dark:text-gray-400">
                   <Icon icon="solar:calendar-linear" width="18" height="20" />
                   Sep 2024 -Dec 2024
                 </p>
               </div>
               <div className="mt-20">
-                <h1 className="text-xl font-bold ">Web Developer</h1>
-                <h2>Bharat Intern</h2>
-                <p className="text-gray-500">Remote</p>
-                <p className="flex flex-row gap-2 items-center mt-3 text-gray-500">
+                <h1 className="text-xl font-bold dark:text-white">Web Developer</h1>
+                <h2 className="dark:text-gray-300">Bharat Intern</h2>
+                <p className="text-gray-500 dark:text-gray-400">Remote</p>
+                <p className="flex flex-row gap-2 items-center mt-3 text-gray-500 dark:text-gray-400">
                   <Icon icon="solar:calendar-linear" width="18" height="20" />
                   Oct 2023 -Nov 2023
                 </p>
@@ -125,10 +125,10 @@ const Qualification = () => {
               <div className="h-4 w-4 rounded-full bg-pink-600"></div>
             </div>
             <div className="mt-30">
-              <h1 className="text-xl font-bold">Junior Data Analyst Intern</h1>
-              <h2>Brakes India Private Limited (TVS)</h2>
-              <p className="text-gray-500">Full Time - Sholinghur, TN</p>
-              <p className="flex flex-row gap-2 items-center mt-3 text-gray-500">
+              <h1 className="text-xl font-bold dark:text-white">Junior Data Analyst Intern</h1>
+              <h2 className="dark:text-gray-300">Brakes India Private Limited (TVS)</h2>
+              <p className="text-gray-500 dark:text-gray-400">Full Time - Sholinghur, TN</p>
+              <p className="flex flex-row gap-2 items-center mt-3 text-gray-500 dark:text-gray-400">
                 <Icon icon="solar:calendar-linear" width="18" height="20" />
                 July 2024 - Aug 2024
               </p>

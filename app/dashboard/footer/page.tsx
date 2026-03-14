@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div
       id="footer"
-      className="flex   items-center justify-center h-auto md:h-56  text-white bg-black  gap-10 p-10 mt-30 md:mt-0"
+      className="flex   items-center justify-center h-auto md:h-56  text-white bg-black dark:bg-[#16161B] gap-10 p-10 mt-30 md:mt-0 transition-colors duration-300"
     >
       <div className="flex flex-col  items-center justify-center gap-6 gap-6 w-full max-w-6xl      ">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 w-full ">

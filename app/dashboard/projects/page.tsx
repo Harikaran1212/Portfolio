@@ -63,12 +63,12 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="mt-30 md:mt-0 flex flex-col items-center justify-center w-full bg-white px-4 sm:px-6 lg:px-8"
+      className="mt-30 md:mt-0 flex flex-col items-center justify-center w-full bg-white dark:bg-[#0A0A0F] px-4 sm:px-6 lg:px-8 transition-colors duration-300"
     >
       <div className="flex flex-col items-center justify-center gap-9 w-full max-w-7xl">
         <div className="flex flex-col items-center justify-center gap-2">
-          <h1 className="text-2xl md:text-3xl font-bold">&lt; My Work /&gt;</h1>
-          <h3 className="text-gray-600 text-sm md:text-base">
+          <h1 className="text-2xl md:text-3xl font-bold dark:text-white">&lt; My Work /&gt;</h1>
+          <h3 className="text-gray-600 dark:text-gray-400 text-sm md:text-base">
             Most recent work
           </h3>
         </div>
@@ -77,7 +77,7 @@ const Projects = () => {
           {projectData.map((project, index) => (
             <li
               key={index}
-              className="flex flex-col gap-4 h-auto min-h-[24rem] w-full max-w-xs sm:w-80 shadow-[0_3px_8px_rgb(0,0,0,0.2)] rounded-lg p-4 hover:shadow-lg transition-shadow duration-300"
+              className="flex flex-col gap-4 h-auto min-h-[24rem] w-full max-w-xs sm:w-80 shadow-[0_3px_8px_rgb(0,0,0,0.2)] dark:shadow-[0_3px_8px_rgb(0,0,0,0.5)] dark:bg-[#16161B] dark:border-1 rounded-lg p-4 hover:shadow-lg dark:hover:shadow-[0_3px_14px_rgb(0,0,0,0.6)] transition-shadow duration-300"
             >
               <div
                 className="relative h-48 w-full rounded-lg overflow-hidden cursor-pointer"
@@ -91,7 +91,7 @@ const Projects = () => {
                   className="rounded-lg hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <h2 className="text-lg font-semibold">{project.title}</h2>
+              <h2 className="text-lg font-semibold dark:text-white">{project.title}</h2>
               <p className="text-gray-400 text-sm">{project.description}</p>
               <Link
                 target="_blank"

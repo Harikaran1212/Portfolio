@@ -39,14 +39,14 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="mt-20 md:mt-0 flex flex-col items-center justify-center h-screen w-full bg-white"
+      className="mt-20 md:mt-0 flex flex-col items-center justify-center h-screen w-full bg-white dark:bg-[#0A0A0F] transition-colors duration-300"
     >
       <div className="flex flex-col items-center justify-center gap-9">
         <div className="flex flex-col items-center justify-center gap-2">
-          <h1 className="text-2xl md:text-3xl font-bold">
+          <h1 className="text-2xl md:text-3xl font-bold dark:text-white">
             &lt; Contact Me /&gt;
           </h1>
-          <h3 className="text-gray-600">Get In Touch</h3>
+          <h3 className="text-gray-600 dark:text-gray-400">Get In Touch</h3>
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-15 md:gap-20 w-full max-w-4xl p-4">
@@ -60,8 +60,8 @@ const Contact = () => {
                 className="text-pink-600"
               />
               <div>
-                <h2 className="font-semibold text-lg">Call Me</h2>
-                <p className="text-gray-600">+91 9843627312</p>
+                <h2 className="font-semibold text-lg dark:text-white">Call Me</h2>
+                <p className="text-gray-600 dark:text-gray-400">+91 9843627312</p>
               </div>
             </li>
             <li className="flex items-center gap-4">
@@ -72,8 +72,8 @@ const Contact = () => {
                 className="text-pink-600"
               />
               <div>
-                <h2 className="font-semibold text-lg">Email</h2>
-                <p className="text-gray-600">harikaranrk2003@gmail.com</p>
+                <h2 className="font-semibold text-lg dark:text-white">Email</h2>
+                <p className="text-gray-600 dark:text-gray-400">harikaranrk2003@gmail.com</p>
               </div>
             </li>
             <li className="flex items-center gap-4">
@@ -84,8 +84,8 @@ const Contact = () => {
                 className="text-pink-600"
               />
               <div>
-                <h2 className="font-semibold text-lg">Location</h2>
-                <p className="text-gray-600">India - Tamil Nadu</p>
+                <h2 className="font-semibold text-lg dark:text-white">Location</h2>
+                <p className="text-gray-600 dark:text-gray-400">India - Tamil Nadu</p>
               </div>
             </li>
           </ul>
@@ -97,34 +97,34 @@ const Contact = () => {
           >
             <ul className="flex flex-col md:flex-row md:items-center justify-center gap-4 flex-wrap">
               <li>
-                <label>Full Name</label>
+                <label className="dark:text-gray-300">Full Name</label>
                 <input
                   type="text"
                   name="name"
                   required
                   placeholder="Your name"
-                  className="text-stone-500 focus:text-violet-600 focus:bg-pink-200 bg-pink-100 rounded-md p-2 w-full max-w-xs focus:outline-none mt-2"
+                  className="text-stone-500 focus:text-violet-600 focus:bg-pink-200 bg-pink-100 dark:bg-[#16161B] dark:border-1 dark:text-gray-200 dark:focus:bg-gray-700 dark:focus:text-pink-400 rounded-md p-2 w-full max-w-xs focus:outline-none mt-2"
                 />
               </li>
               <li>
-                <label>Email</label>
+                <label className="dark:text-gray-300">Email</label>
                 <input
                   type="email"
                   name="email"
                   required
                   placeholder="Name@gmail.com"
-                  className="text-stone-500 focus:text-violet-600 focus:bg-pink-200 bg-pink-100 rounded-md p-2 w-full max-w-xs focus:outline-none mt-2"
+                  className="text-stone-500 focus:text-violet-600 focus:bg-pink-200 bg-pink-100 dark:bg-[#16161B] dark:border-1 dark:text-gray-200 dark:focus:bg-gray-700 dark:focus:text-pink-400 rounded-md p-2 w-full max-w-xs focus:outline-none mt-2"
                 />
               </li>
             </ul>
 
             <div>
-              <label>Message</label>
+              <label className="dark:text-gray-300">Message</label>
               <textarea
                 name="message"
                 required
                 placeholder="Your message"
-                className="text-stone-500 focus:text-violet-600 focus:bg-pink-200 bg-pink-100 rounded-md p-2 w-full mt-2 focus:outline-none h-32"
+                className="text-stone-500 focus:text-violet-600 focus:bg-pink-200 bg-pink-100 dark:bg-[#16161B] dark:border-1 dark:text-gray-200 dark:focus:bg-gray-700 dark:focus:text-pink-400 rounded-md p-2 w-full mt-2 focus:outline-none h-32"
               />
             </div>
 

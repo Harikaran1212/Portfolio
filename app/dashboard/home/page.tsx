@@ -16,7 +16,7 @@ const HomePage = () => {
     <div
       id="home"
       data-aos="fade-down-right"
-      className="flex flex-col items-center justify-center h-screen w-full bg-white gap-5 p-10"
+      className="flex flex-col items-center justify-center h-screen w-full bg-white dark:bg-[#0A0A0F] gap-5 p-10 transition-colors duration-300"
     >
       <div className="flex flex-row items-center justify-center gap-10">
         <div className="flex flex-col  gap-10 ">
@@ -63,9 +63,9 @@ const HomePage = () => {
             alt="Harikaran"
             width={200}
             height={200}
-            className=" mt-18 w-[280px] h-auto border-1 border-black p-1 rounded-t-full shadow-2xl active:p-2  hover:shadow-md transition-shadow duration-300 transform hover:scale-105"
+            className=" mt-18 w-[280px] h-auto border-1 border-black dark:border-white p-1 rounded-t-full shadow-2xl active:p-2  hover:shadow-md transition-shadow duration-300 transform hover:scale-105"
           />
-          <h1 className="text-2xl md:text-5xl font-bold">
+          <h1 className="text-2xl md:text-5xl font-bold dark:text-white">
             Hi, I&#39;m Harikaran
           </h1>
           <p className="hover:bg-pink-300 duration-1000 text-center text-sm  md:text-2xl font-semibold text-pink-600">
@@ -89,7 +89,7 @@ const HomePage = () => {
         </Link>
         <Link
           href="/#about"
-          className="flex items-center gap-2 text-gray-500 hover:translate-y-2 transition-all duration-300"
+          className="flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:translate-y-2 transition-all duration-300"
         >
           <Icon icon="bi:mouse" width="24" height="24" />
           Scroll Down

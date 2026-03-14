@@ -8,14 +8,14 @@ const About = () => {
   return (
     <div
       id="about"
-      className="mt-20 md:mt-0 flex flex-col items-center justify-center min-h-screen bg-white px-4 md:px-0"
+      className="mt-20 md:mt-0 flex flex-col items-center justify-center min-h-screen bg-white dark:bg-[#0A0A0F] px-4 md:px-0 transition-colors duration-300"
     >
       <div className="flex flex-col items-center justify-center gap-9 w-full max-w-6xl">
         <div className="flex flex-col items-center justify-center gap-2 text-center">
-          <h1 className="text-2xl md:text-3xl font-bold">
+          <h1 className="text-2xl md:text-3xl font-bold dark:text-white">
             &lt; About Me /&gt;
           </h1>
-          <h3 className="text-gray-600 text-base md:text-lg">
+          <h3 className="text-gray-600 dark:text-gray-400 text-base md:text-lg">
             My Introduction
           </h3>
         </div>
@@ -26,11 +26,11 @@ const About = () => {
             alt="Harikaran"
             width={280}
             height={180}
-            className="border-4 border-purple-100 shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 rounded-lg"
+            className="border-4 border-purple-100 dark:border-purple-900 shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:scale-105 rounded-lg"
           />
 
           <div className="flex flex-col items-center md:items-start  gap-7 w-full max-w-lg text-left">
-            <p className="text-base text-gray-700 md:w-96">
+            <p className="text-base text-gray-700 dark:text-gray-300 md:w-96">
               I&#39;m a Software Engineering Student & Full-stack JS developer
               with 1 years of experience. I specialize in creating high-quality
               web applications.
@@ -44,19 +44,19 @@ const About = () => {
 
             <div className="flex flex-wrap gap-6 justify-center md:justify-start">
               <div className="text-center">
-                <h2 className="text-xl font-bold">01+</h2>
-                <p className="text-sm">years</p>
-                <p className="text-sm">experience</p>
+                <h2 className="text-xl font-bold dark:text-white">01+</h2>
+                <p className="text-sm dark:text-gray-400">years</p>
+                <p className="text-sm dark:text-gray-400">experience</p>
               </div>
               <div className="text-center">
-                <h2 className="text-xl font-bold">15+</h2>
-                <p className="text-sm">Completed</p>
-                <p className="text-sm">projects</p>
+                <h2 className="text-xl font-bold dark:text-white">15+</h2>
+                <p className="text-sm dark:text-gray-400">Completed</p>
+                <p className="text-sm dark:text-gray-400">projects</p>
               </div>
               <div className="text-center">
-                <h2 className="text-xl font-bold">02</h2>
-                <p className="text-sm">Companies</p>
-                <p className="text-sm">Intern</p>
+                <h2 className="text-xl font-bold dark:text-white">02</h2>
+                <p className="text-sm dark:text-gray-400">Companies</p>
+                <p className="text-sm dark:text-gray-400">Intern</p>
               </div>
             </div>
 

@@ -9,7 +9,7 @@ interface LayoutProps {
 
 const DashboardLayout = ({ children }: LayoutProps) => {
   return (
-    <div className=" flex flex-col min-h-screen bg-[#F8FAFC]">
+    <div className=" flex flex-col min-h-screen bg-[#F8FAFC] dark:bg-[#0A0A0F] transition-colors duration-300">
       <div className="flex flex-1 ">
         <Navbar />
         {children}

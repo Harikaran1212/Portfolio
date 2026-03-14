@@ -12,7 +12,7 @@ import Footer from "./footer/page";
 
 export default function Dashboard() {
   return (
-    <div className="  ">
+    <div className="dark:bg-[#0A0A0F] transition-colors duration-300">
       <Navbar />
       <HomePage />
       <About />

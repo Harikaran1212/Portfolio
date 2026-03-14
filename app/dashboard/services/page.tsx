@@ -7,20 +7,20 @@ const Services = () => {
   return (
     <div
       id="services"
-      className=" mt-80 md:mt-0 flex flex-col items-center justify-center h-screen w-full bg-white  "
+      className=" mt-80 md:mt-0 flex flex-col items-center justify-center h-screen w-full bg-white dark:bg-[#0A0A0F] transition-colors duration-300"
     >
       <div className=" flex flex-col items-center justify-center gap-9 ">
         <div className="flex flex-col items-center justify-center gap-2 ">
-          <h1 className="text-2xl md:text-3xl font-bold ">
+          <h1 className="text-2xl md:text-3xl font-bold dark:text-white">
             &lt; Services /&gt;
           </h1>
-          <h3 className=" text-gray-600">What I Offer</h3>
+          <h3 className=" text-gray-600 dark:text-gray-400">What I Offer</h3>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 p-10">
-          <div className="h-80 w-full md:w-75 bg-white   shadow-[0_3px_8px_rgb(0,0,0,0.2)]   hover:shadow-[0_3px_14px_rgb(0,0,0,0.2)] transition-shadow duration-500 rounded-lg p-6 flex flex-col justify-center gap-8">
+          <div className="h-80 w-full md:w-75 bg-white dark:bg-[#16161B] dark:border-1 shadow-[0_3px_8px_rgb(0,0,0,0.2)] dark:shadow-[0_3px_8px_rgb(0,0,0,0.5)]   hover:shadow-[0_3px_14px_rgb(0,0,0,0.2)] dark:hover:shadow-[0_3px_14px_rgb(0,0,0,0.6)] transition-shadow duration-500 rounded-lg p-6 flex flex-col justify-center gap-8">
             <h1 className="text-pink-600  text-4xl"> &#123; &#125;</h1>
-            <h2 className="text-2xl font-medium">Web Developer</h2>
-            <p className="text-gray-600 text-[16px]">
+            <h2 className="text-2xl font-medium dark:text-white">Web Developer</h2>
+            <p className="text-gray-600 dark:text-gray-400 text-[16px]">
               I build responsive and dynamic web applications, providing
               seamless user experiences.
             </p>
@@ -33,7 +33,7 @@ const Services = () => {
               <Icon icon="uil:arrow-right" width="24" height="24" />
             </Link>
           </div>
-          <div className="h-80 w-full md:w-75 bg-white  shadow-[0_3px_8px_rgb(0,0,0,0.2)]   hover:shadow-[0_3px_14px_rgb(0,0,0,0.2)] transition-shadow duration-500 rounded-lg p-6 flex flex-col justify-center gap-8">
+          <div className="h-80 w-full md:w-75 bg-white dark:bg-[#16161B] dark:border-1 shadow-[0_3px_8px_rgb(0,0,0,0.2)] dark:shadow-[0_3px_8px_rgb(0,0,0,0.5)]   hover:shadow-[0_3px_14px_rgb(0,0,0,0.2)] dark:hover:shadow-[0_3px_14px_rgb(0,0,0,0.6)] transition-shadow duration-500 rounded-lg p-6 flex flex-col justify-center gap-8">
             <h1 className="text-pink-600  ">
               <Icon
                 icon="fluent:paint-brush-32-regular"
@@ -41,8 +41,8 @@ const Services = () => {
                 height="48"
               />
             </h1>
-            <h2 className="text-2xl font-medium">UX/UI Designer</h2>
-            <p className="text-gray-600 text-[16px]">
+            <h2 className="text-2xl font-medium dark:text-white">UX/UI Designer</h2>
+            <p className="text-gray-600 dark:text-gray-400 text-[16px]">
               I build responsive and dynamic web applications, providing
               seamless user experiences.
             </p>
@@ -53,7 +53,7 @@ const Services = () => {
               View More <Icon icon="uil:arrow-right" width="24" height="24" />
             </Link>
           </div>
-          <div className="h-80 w-full md:w-75 bg-white  shadow-[0_3px_8px_rgb(0,0,0,0.2)]   hover:shadow-[0_3px_14px_rgb(0,0,0,0.2)] transition-shadow duration-500 rounded-lg p-6 flex flex-col justify-center gap-8">
+          <div className="h-80 w-full md:w-75 bg-white dark:bg-[#16161B] dark:border-1 shadow-[0_3px_8px_rgb(0,0,0,0.2)] dark:shadow-[0_3px_8px_rgb(0,0,0,0.5)]   hover:shadow-[0_3px_14px_rgb(0,0,0,0.2)] dark:hover:shadow-[0_3px_14px_rgb(0,0,0,0.6)] transition-shadow duration-500 rounded-lg p-6 flex flex-col justify-center gap-8">
             <h1 className="text-pink-600  ">
               {" "}
               <Icon
@@ -63,8 +63,8 @@ const Services = () => {
                 className=""
               />
             </h1>
-            <h2 className="text-2xl font-medium">Data Analyst</h2>
-            <p className="text-gray-600 text-[16px]">
+            <h2 className="text-2xl font-medium dark:text-white">Data Analyst</h2>
+            <p className="text-gray-600 dark:text-gray-400 text-[16px]">
               I transform raw data into actionable insights through analysis,
               visualization, reporting.
             </p>
