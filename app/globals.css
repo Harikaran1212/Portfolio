@@ -2,11 +2,23 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Smooth transition for theme switching */
+/* Smooth transition for theme switching and smooth anchor scrolling */
 html {
   transition: color-scheme 0.3s;
+  scroll-behavior: smooth;
 }
 
 html.dark {
   color-scheme: dark;
+}
+
+/* Apply Poppins globally via CSS variable set by Next.js font */
+body, * {
+  font-family: var(--font-poppins), 'Poppins', system-ui, sans-serif;
+}
+
+/* Prevent horizontal overflow on mobile devices */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
 }

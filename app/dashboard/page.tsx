@@ -1,5 +1,4 @@
 "use client";
-import Navbar from "../components/navbar";
 
 import About from "./about/page";
 import Contact from "./contact/page";
@@ -12,8 +11,7 @@ import Footer from "./footer/page";
 
 export default function Dashboard() {
   return (
-    <div className="dark:bg-[#0A0A0F] transition-colors duration-300">
-      <Navbar />
+    <div className="bg-[#f7f8fe] dark:bg-[#10152c] transition-colors duration-300 w-full">
       <HomePage />
       <About />
       <Services />

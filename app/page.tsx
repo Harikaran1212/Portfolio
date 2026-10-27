@@ -1,10 +1,12 @@
 "use client";
 
+import Navbar from "./components/navbar";
 import Dashboard from "./dashboard/page";
 
 export default function Home() {
   return (
-    <div className="dark:bg-[#0A0A0F] transition-colors duration-300">
+    <div className="bg-[#f7f8fe] dark:bg-[#10152c] transition-colors duration-300 w-full min-h-screen overflow-x-hidden">
+      <Navbar />
       <Dashboard />
     </div>
   );
