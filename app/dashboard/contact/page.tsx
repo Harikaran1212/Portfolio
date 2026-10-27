@@ -76,7 +76,7 @@ const Contact = () => {
             <Icon icon="material-symbols-light:mail-outline-rounded" width="24" height="24" className="text-[#6928e6]" />
           </div>
           <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase text-[#6928e6]">
-            Let's Talk
+            Let&apos;s Talk
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1a1a2e] dark:text-white">
             Contact Me
