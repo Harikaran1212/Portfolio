@@ -4,6 +4,7 @@ import { Icon } from "@iconify/react";
 import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ParticleBackground from "@/components/ParticleBackground";
 
 const Qualification = () => {
   const [activeTab, setActiveTab] = useState("education");
@@ -15,8 +16,8 @@ const Qualification = () => {
   const educationItems = [
     {
       degree: "Bachelor's in Computer Science",
-      institution: "Global Institute Of Engineering And Technology (GIET)",
-      detail: "CGPA: 8.4",
+      institution: "Global Institute Of Engineering And Technology",
+      detail: "CGPA: 8.2",
       period: "2021 - 2025",
     },
     {
@@ -34,6 +35,12 @@ const Qualification = () => {
   ];
 
   const workItems = [
+    {
+      degree: "Software Trainee Engineer",
+      institution: "USR INFOTECH Solutions Pvt Ltd",
+      detail: "Onsite - Bangalore",
+      period: "Oct 2025 - Present",
+    },
     {
       degree: "Software Intern",
       institution: "Mobzway Technologies",
@@ -59,9 +66,10 @@ const Qualification = () => {
   return (
     <section
       id="qualification"
-      className="flex flex-col items-center justify-center min-h-screen w-full bg-[#f7f8fe] dark:bg-[#10152c] py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 transition-colors duration-300"
+      className="relative overflow-hidden flex flex-col items-center justify-center min-h-screen w-full bg-[#f7f8fe] dark:bg-[#10152c] py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 transition-colors duration-300"
     >
-      <div className="flex flex-col items-center justify-center gap-10 md:gap-14 w-full max-w-4xl">
+      <ParticleBackground />
+      <div className="relative z-10 flex flex-col items-center justify-center gap-10 md:gap-14 w-full max-w-4xl">
         {/* Section Header */}
         <div className="flex flex-col items-center justify-center gap-2 sm:gap-3 text-center">
           <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#6928e6]/10 mb-1 sm:mb-2">
@@ -121,7 +129,7 @@ const Qualification = () => {
 
                   {/* Card Content: full-width on mobile (offset by line), 45% on desktop */}
                   <div
-                    className={`ml-12 md:ml-0 w-[calc(100%-3rem)] md:w-[45%] bg-white dark:bg-[#1d2030] rounded-2xl p-4 sm:p-5 shadow-[0_4px_20px_rgba(105,40,230,0.1)] border border-[#6928e6]/10 hover:border-[#6928e6]/25 hover:shadow-[0_8px_30px_rgba(105,40,230,0.18)] transition-all duration-300 text-left ${
+                    className={`ml-12 md:ml-0 w-[calc(100%-3rem)] md:w-[45%] rounded-2xl p-4 sm:p-5 transition-all duration-300 text-left ${
                       isEven ? "md:text-right" : "md:text-left"
                     }`}
                   >

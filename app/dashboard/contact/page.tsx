@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ParticleBackground from "@/components/ParticleBackground";
 
 const Contact = () => {
   useEffect(() => {
@@ -67,9 +68,10 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col items-center justify-center min-h-screen w-full bg-[#f7f8fe] dark:bg-[#10152c] py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 transition-colors duration-300"
+      className="relative overflow-hidden flex flex-col items-center justify-center min-h-screen w-full bg-[#f7f8fe] dark:bg-[#10152c] py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 transition-colors duration-300"
     >
-      <div className="flex flex-col items-center justify-center gap-10 md:gap-14 w-full max-w-5xl">
+      <ParticleBackground />
+      <div className="relative z-10 flex flex-col items-center justify-center gap-10 md:gap-14 w-full max-w-5xl">
         {/* Section Header */}
         <div className="flex flex-col items-center justify-center gap-2 sm:gap-3 text-center">
           <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#6928e6]/10 mb-1 sm:mb-2">

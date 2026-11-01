@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
 import React, { useState } from "react";
+import ParticleBackground from "@/components/ParticleBackground";
 
 interface Project {
   title: string;
@@ -63,9 +64,10 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex flex-col items-center justify-center w-full bg-[#f7f8fe] dark:bg-[#10152c] px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-24 transition-colors duration-300"
+      className="relative overflow-hidden flex flex-col items-center justify-center w-full bg-[#f7f8fe] dark:bg-[#10152c] px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-24 transition-colors duration-300"
     >
-      <div className="flex flex-col items-center justify-center gap-10 md:gap-14 w-full max-w-7xl">
+      <ParticleBackground />
+      <div className="relative z-10 flex flex-col items-center justify-center gap-10 md:gap-14 w-full max-w-7xl">
         {/* Section Header */}
         <div className="flex flex-col items-center justify-center gap-2 sm:gap-3 text-center">
           <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#6928e6]/10 mb-1 sm:mb-2">

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./context/ThemeContext";
+import CustomCursor from "@/components/CustomCursor";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className={poppins.variable}>
       <body style={{ fontFamily: "var(--font-poppins), Poppins, system-ui, sans-serif" }}>
         <ThemeProvider>
+          <CustomCursor />
           {children}
         </ThemeProvider>
       </body>

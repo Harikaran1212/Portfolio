@@ -3,6 +3,7 @@
 import Link from "next/link";
 import React from "react";
 import { Icon } from "@iconify/react";
+import ParticleBackground from "@/components/ParticleBackground";
 
 const Footer = () => {
   const time = new Date().getFullYear();
@@ -48,10 +49,11 @@ const Footer = () => {
   return (
     <footer
       id="footer"
-      className="bg-[#10152c] dark:bg-[#0d1024] text-white transition-colors duration-300"
+      className="relative overflow-hidden bg-[#10152c] dark:bg-[#0d1024] text-white transition-colors duration-300"
     >
+      <ParticleBackground />
       {/* Main footer content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-14">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-14">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 items-start">
           {/* Brand */}
           <div className="flex flex-col gap-4">
@@ -59,7 +61,7 @@ const Footer = () => {
               Harikaran
             </h2>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
-              Full Stack Developer crafting responsive and elegant web experiences.
+              Frontend Developer crafting responsive and elegant web experiences.
             </p>
             {/* Socials */}
             <div className="flex gap-2.5 sm:gap-3 flex-wrap pt-1">

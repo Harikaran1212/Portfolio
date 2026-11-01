@@ -1,6 +1,7 @@
 "use client";
 
 import { Icon } from "@iconify/react";
+import ParticleBackground from "@/components/ParticleBackground";
 
 const skills = [
   {
@@ -105,9 +106,10 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col items-center justify-center min-h-screen w-full bg-[#f7f8fe] dark:bg-[#10152c] transition-colors duration-300 py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8"
+      className="relative overflow-hidden flex flex-col items-center justify-center min-h-screen w-full bg-[#f7f8fe] dark:bg-[#10152c] transition-colors duration-300 py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8"
     >
-      <div className="flex flex-col items-center justify-center gap-10 md:gap-14 w-full max-w-6xl">
+      <ParticleBackground />
+      <div className="relative z-10 flex flex-col items-center justify-center gap-10 md:gap-14 w-full max-w-6xl">
         {/* Section Header */}
         <div className="flex flex-col items-center justify-center gap-2 sm:gap-3 text-center">
           <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#6928e6]/10 mb-1 sm:mb-2">

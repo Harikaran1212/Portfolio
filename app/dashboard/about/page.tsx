@@ -3,14 +3,16 @@
 import React from "react";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
+import ParticleBackground from "@/components/ParticleBackground";
 
 const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-col items-center justify-center min-h-screen bg-[#f7f8fe] dark:bg-[#10152c] px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-24 transition-colors duration-300"
+      className="relative overflow-hidden flex flex-col items-center justify-center min-h-screen bg-[#f7f8fe] dark:bg-[#10152c] px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-24 transition-colors duration-300"
     >
-      <div className="flex flex-col items-center justify-center gap-10 md:gap-14 w-full max-w-6xl">
+      <ParticleBackground />
+      <div className="relative z-10 flex flex-col items-center justify-center gap-10 md:gap-14 w-full max-w-6xl">
         {/* Section Header */}
         <div className="flex flex-col items-center justify-center gap-2 sm:gap-3 text-center">
           <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#6928e6]/10 mb-1 sm:mb-2">
@@ -43,6 +45,29 @@ const About = () => {
           {/* Info */}
           <div className="flex flex-col items-center md:items-start gap-6 w-full max-w-lg">
             {/* Stats */}
+
+            {/* Description */}
+            <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed text-center md:text-left">
+              I&#39;m a Frontend Developer
+              with 1 year of experience. I specialize in creating high-quality
+              SaaS Products with seamless user experiences.
+            </p>
+
+            {/* Highlights */}
+            <ul className="flex flex-col gap-2.5 w-full">
+              {[
+                "🚀 I deliver client-focused solutions.",
+                "⚡ I'm a Frontend developer.",
+                "🔥 I love building SaaS Products.",
+              ].map((item, i) => (
+                <li
+                  key={i}
+                  className="flex items-center gap-3 text-gray-700 dark:text-gray-300 bg-white dark:bg-[#1d2030] px-4 py-3 rounded-xl shadow-[0_2px_8px_rgba(105,40,230,0.08)] border-l-4 border-[#6928e6] font-medium text-xs sm:text-sm"
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
             <div className="grid grid-cols-3 gap-2.5 sm:gap-4 md:gap-6 w-full">
               {[
                 { value: "01+", label1: "Years", label2: "Experience" },
@@ -61,29 +86,6 @@ const About = () => {
                 </div>
               ))}
             </div>
-
-            {/* Description */}
-            <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed text-center md:text-left">
-              I&#39;m a Software Engineering Student &amp; Full-stack JS developer
-              with 1 year of experience. I specialize in creating high-quality
-              web applications.
-            </p>
-
-            {/* Highlights */}
-            <ul className="flex flex-col gap-2.5 w-full">
-              {[
-                "🚀 I deliver client-focused solutions.",
-                "⚡ I'm a web developer Freelancer.",
-                "🔥 I love sharing programming tips.",
-              ].map((item, i) => (
-                <li
-                  key={i}
-                  className="flex items-center gap-3 text-gray-700 dark:text-gray-300 bg-white dark:bg-[#1d2030] px-4 py-3 rounded-xl shadow-[0_2px_8px_rgba(105,40,230,0.08)] border-l-4 border-[#6928e6] font-medium text-xs sm:text-sm"
-                >
-                  {item}
-                </li>
-              ))}
-            </ul>
 
             {/* Download CV */}
             <a

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import React, { useEffect } from "react";
+import ParticleBackground from "@/components/ParticleBackground";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import AOS from "aos";
@@ -45,13 +46,16 @@ const HomePage = () => {
       id="home"
       className="relative flex flex-col items-center justify-center min-h-screen w-full bg-[#f7f8fe] dark:bg-[#10152c] overflow-hidden transition-colors duration-300 pt-24 pb-16 md:py-0 px-4 sm:px-6"
     >
+      {/* Particle canvas */}
+      <ParticleBackground />
+
       {/* Decorative blobs */}
       <div className="absolute top-0 right-0 w-[300px] sm:w-[500px] md:w-[600px] h-[300px] sm:h-[500px] md:h-[600px] rounded-full bg-gradient-to-br from-[#4219dc]/10 to-[#973af1]/10 blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[250px] sm:w-[350px] md:w-[400px] h-[250px] sm:h-[350px] md:h-[400px] rounded-full bg-gradient-to-tr from-[#4219dc]/8 to-[#973af1]/8 blur-3xl pointer-events-none" />
 
       <div
         data-aos="fade-up"
-        className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-16 relative z-10 w-full max-w-5xl"
+        className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-16 relative z-10 w-full max-w-5xl mt-14"
       >
         {/* Desktop Social links - vertical */}
         <div className="hidden md:flex flex-col gap-5 items-center">
@@ -82,7 +86,7 @@ const HomePage = () => {
               width={260}
               height={260}
               priority
-              className="relative w-44 h-44 sm:w-56 sm:h-56 md:w-64 md:h-64 object-cover rounded-full border-4 border-white dark:border-[#1d2030] shadow-[0_8px_32px_rgba(105,40,230,0.25)] hover:shadow-[0_12px_40px_rgba(105,40,230,0.4)] transition-all duration-500 hover:scale-105"
+              className="relative w-44 h-44 sm:w-56 sm:h-56 md:w-64 md:h-64 object-cover rounded-full border-4 border-white dark:border-[#973af1] shadow-[0_8px_32px_rgba(105,40,230,0.25)] hover:shadow-[0_12px_40px_rgba(105,40,230,0.4)] transition-all duration-500 hover:scale-105"
             />
           </div>
 
@@ -94,7 +98,7 @@ const HomePage = () => {
               Harikaran
             </h1>
             <p className="mt-2 sm:mt-3 text-sm sm:text-base md:text-lg font-medium text-gray-500 dark:text-gray-400 max-w-md mx-auto">
-              Software Engineering Student &amp; Full-stack JS Developer
+              Frontend Developer
             </p>
           </div>
 
